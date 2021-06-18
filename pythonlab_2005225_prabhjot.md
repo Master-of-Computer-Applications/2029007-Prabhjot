@@ -1,4 +1,55 @@
-******Python program to print the elements of an array ******
+**Guru Nanak Dev Engineering College, Ludhiana***
+ 
+**Course Name- PROGRAMMING IN PYTHON **
+
+**Course Code: PGCA-207**
+
+
+***SUBMITTED BY:-
+
+**PRABHJOT KAUR**
+
+**MCA-2ND SEM**
+
+**URN- 2005225**
+
+**SUBMITTED TO:-**
+
+**PROF. SATINDERPAL SINGH**
+
+
+
+
+|Sr no   | Experiment Name  |   |Remarks   |   |
+|---|---|---|---|---|
+|  1 	Write a Python program to create an array of 5 elements and display the array items Access each individual items through indexes. |   |   |   |   |
+|  2 	Write a Python program to reverse the order of items in the array. |   |   |   |   |
+|  3 	Write a Python program to append a new item to the end of the array. |   |   |   |   |
+   4 	Write a Python program to remove a specified item using the index from an array.
+   5 	Write a Python program to get the length of an array.
+   6 	Write a Python program for binary Search.
+   7 	Write a Python program for sequential or linear search.
+   8 	Write a Python program to sort a list of elements using the bubble sort algorithm.
+   9 	Write a Python program to sort a list of elements using the selection sort algorithm.
+   10 	Write a Python program to sort a list of elements using the insertion sort algorithm. 	
+   11 	Write a Python program to sort a list of elements using the quick sort algorithm. 	
+   12 	Write a Python program to create a singly linked list and append some items iterate through the list. 	
+   13 	Write a Python program to find the size of singly linked list. 	
+   14 	Write a python program to search a specific item in singly linked list and return true if the item was found otherwise return false. 	
+   15 	Write a Python program to delete the first item from singly linked list. 	
+   16 	Write a Python program to create a circular linked list. 	
+   17 	Write a Python program to implement stack operation using list. 	
+   18 	Write a Python program to implement queue and its operations using list. 	
+   19 	Write a Python program to find kth smallest element in a given binary tree. 	
+   20 	Write a Python program to count the number of nodes in binary search tree.
+
+
+
+
+
+**#1 Python program to print the elements of an array 
+Code**
+```python
 
 Initialize array  
 arr = [0,1, 2, 3, 4, 5]; 
@@ -10,10 +61,12 @@ print"3rd element:",arr[2];
 print"4th element:",arr[3];
 print"5th element:",arr[4];
 print"6th element:",arr[5];
+```
 output:- ![Screenshot from 2021-06-07 18-57-23](https://user-images.githubusercontent.com/82701181/121027582-b63e8480-c7c4-11eb-9d3c-a116488a839d.png)
-
 ******
-********Write a python program to reverse the order of the items in the array.******
+**#2 Write a python program to reverse the order of the items in the array.**
+Code
+```python
 
 #The original array
 arr = [11, 22, 33, 44, 55]
@@ -21,19 +74,25 @@ print("Before reversal Array is :",arr)
 
 arr.reverse() #reversing using reverse()
 print("After reversing Array:",arr)
+```
 output:- ![Screenshot from 2021-06-07 19-14-02](https://user-images.githubusercontent.com/82701181/121027946-fe5da700-c7c4-11eb-9e31-21bad631be94.png)
 
 ********
 
-********Write a Python program to append a new item to the end of the array.******
+**#3 Write a Python program to append a new item to the end of the array.**
+Code
+```python
 
 my_input = ['Engineering', 'Medical'] 
 my_input.append('Science') 
 print(my_input)
+```
 output:-![Screenshot from 2021-06-07 19-22-21](https://user-images.githubusercontent.com/82701181/121028793-bab76d00-c7c5-11eb-9863-b6f1ca39f3c1.png)
 
 ********
-********write a python program to remove a specified item using the index from an array.********
+**#4 write a python program to remove a specified item using the index from an array.**
+code
+```python
 
 #original array
 arr= [1,2,3,4,5,6]
@@ -45,19 +104,25 @@ print(arr)
 arr.remove(4)
 #Printing the array
 print(arr)
+```
 Output:- ![Screenshot from 2021-06-07 19-30-19](https://user-images.githubusercontent.com/82701181/121030331-00c10080-c7c7-11eb-8e2c-d50ccb0af4eb.png)
 
 ********
-********Write a Python program to get the length of an array.********
+**#5 Write a Python program to get the length of an array.**
+code
+```python
 
 import array 
 arr = [1,2,3,4,'PYTHON']
 print("Array elements: ",arr)
 print("Length of array:",len(arr))
+```
 Output:- ![Screenshot from 2021-06-07 19-43-56](https://user-images.githubusercontent.com/82701181/121032260-be98be80-c7c8-11eb-8e5e-9e607b37d973.png)
 
 ********
-********Write a program for binary search.**********
+**#6 Write a program for binary search.**
+code
+```python
 
 def binary_search(arr, low, high, x):
  
@@ -94,9 +159,14 @@ if result != -1:
     print("Element is present at index", str(result))
 else:
     print("Element is not present in array")
+    ```
+    
     output:- ![Screenshot from 2021-06-07 19-52-12](https://user-images.githubusercontent.com/82701181/121033521-e6d4ed00-c7c9-11eb-8f00-fb820fc84404.png)
     ********
-    ********Write a program for sequential or linear search.********
+    
+******#7 Write a program for sequential or linear search.***
+    code
+    ```python
     
     def linearsearch(arr, x):
    for i in range(len(arr)):
@@ -106,11 +176,13 @@ else:
 arr = ['t','u','t','o','r','i','a','l']
 x = 'a'
 print("element found at index "+str(linearsearch(arr,x)))
+```
 output:-![Screenshot from 2021-06-07 19-57-42](https://user-images.githubusercontent.com/82701181/121034651-ca858000-c7ca-11eb-9852-9be695b31beb.png)
 ************
 
-********Write a program to sort a list of elements using the bubble sort algorithm.********
-
+**#8 Write a program to sort a list of elements using the bubble sort algorithm.**
+code
+```python
 def bubbleSort(nlist):
     for passnum in range(len(nlist)-1,0,-1):
         for i in range(passnum):
@@ -122,9 +194,12 @@ def bubbleSort(nlist):
 nlist = [14,46,43,27,57,41,45,21,70]
 bubbleSort(nlist)
 print(nlist)
+```
 output:- ![Screenshot from 2021-06-07 19-46-47](https://user-images.githubusercontent.com/82701181/121032678-20592880-c7c9-11eb-86c0-79aed01376dc.png)
 **********
-*********Write a program to sort a list of elements using the selection sort.**********
+**#9 Write a program to sort a list of elements using the selection sort.**
+code
+```python
 
 def selectionSort( itemsList ):
     n = len( itemsList )
@@ -146,19 +221,22 @@ def selectionSort( itemsList ):
 el = [21,6,9,33,3]
 
 print(selectionSort(el))
+```
 output:- ![Screenshot from 2021-05-27 16-55-03](https://user-images.githubusercontent.com/82701181/120997252-ab73f780-c7a4-11eb-9d7f-25b64b2b878b.png)
-*********
-***********Write a program to sort a list of elements using insertion sort.*************
-
+****#10Write a program to sort a list of elements using insertion sort.**
+code
+```python
 arr = [12, 11, 13, 5, 6]
 insertionSort(arr)
 print ("Sorted array is:")
 for i in range(len(arr)):
     print ("%d" %arr[i])
+```
 output:- !![Screenshot from 2021-05-27 17-02-17](https://user-images.githubusercontent.com/82701181/120998030-51276680-c7a5-11eb-9f25-16b9cb3236d0.png)
 **********
-************Write a program to sort a list of elements using the quick sort.************
-
+**#11 **Write a program to sort a list of elements using the quick sort.**
+code
+```python
 def quicksort(x):
     if len(x) == 1 or len(x) == 0:
         return x
@@ -178,9 +256,12 @@ def quicksort(x):
 alist = [54,26,93,17,77,31,44,55,20]
 quicksort(alist)
 print(alist)
+```
 output:- ![Screenshot from 2021-05-27 17-12-33](https://user-images.githubusercontent.com/82701181/120999057-50db9b00-c7a6-11eb-9e50-6e430d706b15.png)
 **********
-********Write a program to create a singly linked list, append some items & iterate through the list.***********
+**#12 Write a program to create a singly linked list, append some items & iterate through the list.***
+code
+```python
 class Node:
     def _init_(self, data=None):
         self.data = data
@@ -217,9 +298,11 @@ items.append_item('Java')
 
 for val in items.iterate_item():
     print(val)
+ ```
 output:- ![Exp12](https://user-images.githubusercontent.com/82701181/120999947-51286600-c7a7-11eb-8d27-39d630b6e7c7.png)
-********Write a program to find the size of a singly linked list.***********
-
+**#13 Write a program to find the size of a singly linked list.**
+code
+```python
 class Node:
     # Singly linked node
     def __init__(self, data=None):
@@ -263,10 +346,12 @@ for val in items.iterate_item():
     print(val)
 
 print("\nSize of the list:",items.count)
+```
 output:- ![Exp13](https://user-images.githubusercontent.com/82701181/121001490-f98afa00-c7a8-11eb-9cfa-e2d8dcd3c683.png)
 **********
-**********Write a program to search a specific item in a singly list and return true if the item is found otherwise return false.***********
-
+**#14 Write a program to search a specific item in a singly list and return true if the item is found otherwise return false.**
+code
+```python
 class Node:
     # Singly linked node
     def __init__(self, data=None):
@@ -321,9 +406,12 @@ if items.search_item('C++'):
     print("True")
 else:
     print("False")
+```
 output:- ![Exp14](https://user-images.githubusercontent.com/82701181/121002118-a1082c80-c7a9-11eb-93d7-183558dfb1cf.png)
 **********
-***********Write a program to delete the first item from a singly linked list.************
+**#15 Write a program to delete the first item from a singly linked list.**
+code
+```python
 class Node:
     # Singly linked node
     def __init__(self, data=None):
@@ -384,9 +472,12 @@ print("\nAfter removing the first item from the list:")
 items.delete_item('PHP')
 for val in items.iterate_item():
     print(val)
+```
  output:-![Exp15](https://user-images.githubusercontent.com/82701181/121002569-1d9b0b00-c7aa-11eb-9c2e-9c4d96734de1.png)
  ***********
-************Write a program to create circular single linked lists.************
+**#16*Write a program to create circular single linked lists.**
+code
+```python
 class Node:
      
     # Constructor to create  a new node
@@ -444,15 +535,19 @@ cllist.push(11)
  
 print "Contents of circular Linked List"
 cllist.printList()
+```
 output:-![WhatsApp Image 2021-06-07 at 19 33 06](https://user-images.githubusercontent.com/82701181/121037121-d4a87e00-c7cc-11eb-8ae2-17814de4c6da.jpeg)
 ************
-********Write a program to implement stack and its operation using list.***********
+**#17*Write a program to implement stack and its operation using list.**
+code
+```python
 stack = []
  
 # append() function to push
 # element in the stack
 stack.append('a')
 stack.append('b')
+
 stack.append('c')
  
 print('Initial stack')
@@ -468,10 +563,12 @@ print(stack.pop())
  
 print('\nStack after elements are poped:')
 print(stack)
+```
 output:-![Screenshot from 2021-06-07 20-23-21](https://user-images.githubusercontent.com/82701181/121038877-40d7b180-c7ce-11eb-8a52-3f2a7d332de4.png)
 ***************
-*********Write program to implement queue and its operations using list.************
-
+**#18 Write program to implement queue and its operations using list.***
+code
+```python
  Initializing a queue
 queue = []
 
@@ -494,10 +591,12 @@ print(queue)
 #Uncommenting print(queue.pop(0))
 #will raise and IndexError
 #as the queue is now empty
+```
 output:- ![Expe18](https://user-images.githubusercontent.com/82701181/121039449-b6dc1880-c7ce-11eb-824b-3d9692481d5d.png)
 ************
-********Write program to create a BST using an array elements where elements are sorted in ascending order.********
-
+***#19 Write program to create a BST using an array elements where elements are sorted in ascending order.**
+code
+```python
 class TreeNode(object):
     def _init_(self, x):
         self.val = x
@@ -523,10 +622,12 @@ def preOrder(node):
     
 result = sorted_array_to_bst([1, 2, 3, 4, 5, 6, 7])
 preOrder(result)
+```
 output:-![WhatsApp Image 2021-06-07 at 19 52 20](https://user-images.githubusercontent.com/82701181/121040583-a37d7d00-c7cf-11eb-9c37-95b6c3e9f528.jpeg)
 ************
-********Write a Program to find the kth smallest element in a given array.********
-
+**#20*Write a Program to find the kth smallest element in a given array.**
+code
+```python
 class TreeNode(object):
     def _init_(self, x):
         self.val = x
@@ -552,6 +653,7 @@ def preOrder(node):
     
 result = sorted_array_to_bst([1, 2, 3, 4, 5, 6, 7])
 preOrder(result)
+```
 output:-![WhatsApp Image 2021-06-07 at 19 57 50](https://user-images.githubusercontent.com/82701181/121041217-2e5e7780-c7d0-11eb-89f6-f0075dc0c8a2.jpeg)
 
 
